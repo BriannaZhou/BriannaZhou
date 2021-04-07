@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="354.0" prefWidth="326.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ButtonBar layoutX="67.0" layoutY="186.0" prefHeight="40.0" prefWidth="200.0" />
+            <ToolBar layoutX="-6.0" layoutY="73.0" prefHeight="82.0" prefWidth="326.0">
+              <items>
+                <Button layoutX="244.0" layoutY="244.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#setOne" prefHeight="55.0" prefWidth="55.0" text="1" />
+                <Button layoutX="244.0" layoutY="244.0" mnemonicParsing="false" onAction="#setTwo" prefHeight="55.0" prefWidth="55.0" text="2" />
+                  <Button mnemonicParsing="false" onAction="#setThree" prefHeight="55.0" prefWidth="55.0" text="3" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Add" prefHeight="55.0" prefWidth="55.0" text="+">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#Multiply" prefHeight="55.0" prefWidth="55.0" text="*">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Button>
+              </items>
+            </ToolBar>
+            <ToolBar layoutX="-6.0" layoutY="226.0" prefHeight="68.0" prefWidth="332.0">
+               <items>
+                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setSeven" prefHeight="55.0" prefWidth="55.0" text="7" />
+                  <Button mnemonicParsing="false" onAction="#setEight" prefHeight="55.0" prefWidth="55.0" text="8" />
+                  <Button mnemonicParsing="false" onAction="#setNine" prefHeight="55.0" prefWidth="55.0" text="9" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#SetZone" prefHeight="55.0" prefWidth="55.0" text="0" />
+                  <Button mnemonicParsing="false" onAction="#Clears" prefHeight="55.0" prefWidth="55.0" text="C" />
+               </items>
+            </ToolBar>
+            <ToolBar layoutX="-6.0" layoutY="158.0" prefHeight="68.0" prefWidth="311.0">
+               <items>
+                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setFour" prefHeight="55.0" prefWidth="55.0" text="4" />
+                  <Button mnemonicParsing="false" onAction="#setFive" prefHeight="55.0" prefWidth="55.0" text="5" />
+                  <Button mnemonicParsing="false" onAction="#setSix" prefHeight="55.0" prefWidth="55.0" text="6" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Subtract" prefHeight="55.0" prefWidth="55.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Equal" prefHeight="58.0" prefWidth="59.0" text="=">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </items>
+            </ToolBar>
+            <Label fx:id="LabelNumber" layoutX="240.0" layoutY="33.0" prefHeight="40.0" prefWidth="39.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
