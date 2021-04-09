@@ -15,50 +15,87 @@
       <AnchorPane prefHeight="354.0" prefWidth="326.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
             <ButtonBar layoutX="67.0" layoutY="186.0" prefHeight="40.0" prefWidth="200.0" />
-            <ToolBar layoutX="-6.0" layoutY="73.0" prefHeight="82.0" prefWidth="326.0">
+            <ToolBar layoutY="95.0" prefHeight="82.0" prefWidth="326.0">
               <items>
-                <Button layoutX="244.0" layoutY="244.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#setOne" prefHeight="55.0" prefWidth="55.0" text="1" />
-                <Button layoutX="244.0" layoutY="244.0" mnemonicParsing="false" onAction="#setTwo" prefHeight="55.0" prefWidth="55.0" text="2" />
-                  <Button mnemonicParsing="false" onAction="#setThree" prefHeight="55.0" prefWidth="55.0" text="3" />
+                <Button layoutX="244.0" layoutY="244.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#setOne" prefHeight="55.0" prefWidth="55.0" text="1">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                <Button layoutX="244.0" layoutY="244.0" mnemonicParsing="false" onAction="#setTwo" prefHeight="55.0" prefWidth="55.0" text="2">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#setThree" prefHeight="55.0" prefWidth="55.0" text="3">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
                   <Button alignment="CENTER" mnemonicParsing="false" onAction="#Add" prefHeight="55.0" prefWidth="55.0" text="+">
                      <font>
-                        <Font size="27.0" />
+                        <Font size="25.0" />
                      </font>
                   </Button>
-                  <Button alignment="BOTTOM_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#Multiply" prefHeight="55.0" prefWidth="55.0" text="*">
+                  <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#Multiply" prefHeight="55.0" prefWidth="55.0" text="*">
                      <font>
-                        <Font size="27.0" />
+                        <Font size="25.0" />
                      </font>
                   </Button>
               </items>
             </ToolBar>
-            <ToolBar layoutX="-6.0" layoutY="226.0" prefHeight="68.0" prefWidth="332.0">
+            <ToolBar layoutX="-3.0" layoutY="245.0" prefHeight="68.0" prefWidth="332.0">
                <items>
-                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setSeven" prefHeight="55.0" prefWidth="55.0" text="7" />
-                  <Button mnemonicParsing="false" onAction="#setEight" prefHeight="55.0" prefWidth="55.0" text="8" />
-                  <Button mnemonicParsing="false" onAction="#setNine" prefHeight="55.0" prefWidth="55.0" text="9" />
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#SetZone" prefHeight="55.0" prefWidth="55.0" text="0" />
-                  <Button mnemonicParsing="false" onAction="#Clears" prefHeight="55.0" prefWidth="55.0" text="C" />
-               </items>
-            </ToolBar>
-            <ToolBar layoutX="-6.0" layoutY="158.0" prefHeight="68.0" prefWidth="311.0">
-               <items>
-                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setFour" prefHeight="55.0" prefWidth="55.0" text="4" />
-                  <Button mnemonicParsing="false" onAction="#setFive" prefHeight="55.0" prefWidth="55.0" text="5" />
-                  <Button mnemonicParsing="false" onAction="#setSix" prefHeight="55.0" prefWidth="55.0" text="6" />
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Subtract" prefHeight="55.0" prefWidth="55.0" text="-">
+                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setSeven" prefHeight="55.0" prefWidth="55.0" text="7">
                      <font>
-                        <Font name="System Bold" size="26.0" />
-                     </font>
-                  </Button>
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Equal" prefHeight="58.0" prefWidth="59.0" text="=">
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#setEight" prefHeight="55.0" prefWidth="55.0" text="8">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#setNine" prefHeight="55.0" prefWidth="55.0" text="9">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#SetZone" prefHeight="55.0" prefWidth="55.0" text="0">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#Clear" prefHeight="55.0" prefWidth="55.0" text="C">
                      <font>
                         <Font size="25.0" />
                      </font>
                   </Button>
                </items>
             </ToolBar>
-            <Label fx:id="LabelNumber" layoutX="200.0" layoutY="33.0" prefHeight="40.0" prefWidth="120.0" />
+            <ToolBar layoutY="172.0" prefHeight="68.0" prefWidth="326.0">
+               <items>
+                  <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#setFour" prefHeight="55.0" prefWidth="55.0" text="4">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#setFive" prefHeight="55.0" prefWidth="55.0" text="5">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#setSix" prefHeight="55.0" prefWidth="55.0" text="6">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Subtract" prefHeight="55.0" prefWidth="55.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Equal" prefHeight="55.0" prefWidth="55.0" text="=">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </items>
+            </ToolBar>
+            <Label fx:id="LabelNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="36.0" prefHeight="40.0" prefWidth="120.0" text="0">
+               <font>
+                  <Font size="29.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </children>

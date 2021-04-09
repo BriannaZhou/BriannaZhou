@@ -10,9 +10,13 @@ public class Controller {
 
     public Label LabelNumber;
     public ArrayList<String> numbers = new ArrayList<>();
-    public ArrayList<String> operators = new ArrayList<>();
-    String plus = "plus";
+    public ArrayList<String> operator = new ArrayList<>();
+    int result;
+    int FirstNumber;
+    int SecondNumber;
+    String operators;
     public double total = 0;
+    public boolean ButtonOperator = false;
 
 
 
@@ -50,44 +54,65 @@ public class Controller {
         else{
             String display = LabelNumber.getText() + number;
             LabelNumber.setText(display);
+            ButtonOperator = false;
         }
     }
 
 
+
     public void Add(ActionEvent actionEvent) {
-        numbers.add(LabelNumber.getText());
+        FirstNumber = Integer.parseInt(LabelNumber.getText());
         LabelNumber.setText("");
-        operators.add(plus);
+        operators = "plus";
+
 
 
 
     }
 
     public void Subtract(ActionEvent actionEvent) {
+        FirstNumber = Integer.parseInt(LabelNumber.getText());
         LabelNumber.setText("");
+        operators = "minus";
 
 
     }
 
     public void Multiply(ActionEvent actionEvent) {
+        operators = "multiply";
+        FirstNumber = Integer.parseInt(LabelNumber.getText());
         LabelNumber.setText("");
 
     }
+
+
+
 
     public void Equal(ActionEvent actionEvent) {
-        LabelNumber.setText("");
-        for (int i = 0; i < numbers.size(); i++) {
 
+        String total;
+        SecondNumber = Integer.parseInt(LabelNumber.getText());
+        if (operators == "plus"){
+            result = FirstNumber + SecondNumber;
+            total = Integer.toString(result);
+            LabelNumber.setText(total);
+        }else if (operators == "minus"){
+            result = FirstNumber - SecondNumber;
+            total = Integer.toString(result);
+            LabelNumber.setText(total);
+
+        }else if(operators == "multiply"){
+            result = FirstNumber * SecondNumber;
+            total = Integer.toString(result);
+            LabelNumber.setText(total);
         }
-        String number = numbers.get(0);
-        LabelNumber.setText(String.valueOf(number));
+        }
 
-    }
 
-    public void Clears(ActionEvent actionEvent) {
+    public void Clear(ActionEvent actionEvent) {
         LabelNumber.setText("");
+        numbers.clear();
+        operator.clear();
+        ButtonOperator = false;
     }
-
-
-
 }
