@@ -34,10 +34,22 @@ public class Controller {
         if (friend == null) {
             return;
         }
-        labelName.setText(friend.getName());
-        labelSchool.setText( friend.getSchool());
+        labelName.setText("Name: " + friend.getName());
+        labelSchool.setText("School " + friend.getSchool());
         String garde = Integer.toString(friend.getGrade());
-        labelGrade.setText( garde);
+        labelGrade.setText("Grade: " + garde);
 
+    }
+
+
+    public void deleteFriend(ActionEvent actionEvent) {
+        Friend friend = listFriends.getSelectionModel().getSelectedItem();
+        if (friend == null) {
+            return;
+        }
+        listFriends.getItems().remove(friend);
+        labelName.setText("Name: ");
+        labelSchool.setText("School: ");
+        labelGrade.setText("Grade: ");
     }
 }

@@ -25,7 +25,7 @@
             <TextField fx:id="textName" layoutX="14.0" layoutY="54.0" />
             <TextField fx:id="textSchool" layoutX="15.0" layoutY="116.0" />
             <TextField fx:id="textGrade" layoutX="17.0" layoutY="183.0" />
-            <Button fx:id="buttonDelete" layoutX="380.0" layoutY="265.0" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="buttonDelete" layoutX="380.0" layoutY="265.0" mnemonicParsing="false" onAction="#deleteFriend" text="Delete" />
             <ListView fx:id="listFriends" layoutX="181.0" layoutY="41.0" onMouseClicked="#displayFriends" prefHeight="284.0" prefWidth="183.0" />
             <Label fx:id="labelName" layoutX="392.0" layoutY="58.0" text="Name:" />
             <Label fx:id="labelSchool" layoutX="392.0" layoutY="120.0" text="School:" />
